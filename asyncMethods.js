@@ -35,3 +35,22 @@ module.exports = {
   getBooksByTitle
 };
 
+//getAllBooks((err, books) => console.log(books));
+
+/*getBookByISBN("123")
+  .then(book => {
+    console.log(book);
+  })
+  .catch(err => {
+    console.error(err);
+  });*/
+
+  /*(async () => {
+  const booksByAuthor = await getBooksByAuthor("John Doe");
+  console.log("Books by author (async/await):", booksByAuthor);
+})();*/
+
+(async () => {
+  const booksByTitle = await getBooksByTitle("Node Basics");
+  console.log("Books by title (async/await):", booksByTitle);
+})();
